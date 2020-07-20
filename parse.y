@@ -54,6 +54,8 @@ terms : term
 	  ;
 
 term : '\n'
+	 | ' '
+	 | '\t' 
 	 ;
 
 

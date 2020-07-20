@@ -38,7 +38,7 @@ Paragraph return keyword_paragraph;
 [}] return yytext[0]; 
 [{]{TRAIL} return yytext[0]; 
 "\n" return '\n';
-[ \t] ; 
+[ \t] return yytext[0]; 
 
 . {
 	fprintf(stderr, "lexical error %s\n", yytext);
