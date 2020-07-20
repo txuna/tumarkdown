@@ -8,6 +8,7 @@ tumarkdown# Install
 git clone https://github.com/kissesy/tumarkdown.git
 sudo apt install flex 
 sudo apt install yacc 
+cd tumarkdown
 flex lex.l 
 yacc -d parse.y
 gcc lex.yy.c y.tab.c -o mark
